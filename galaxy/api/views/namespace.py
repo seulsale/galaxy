@@ -64,9 +64,9 @@ def check_basic(data, errors, instance=None):
     elif not re.match(r'^[a-zA-Z0-9_]+$', name):
         # Allow only names containing word chars
         errors['name'] = "Name can only contain [A-Za-z0-9_]"
-    elif(len(name) <= 2):
+    elif (len(name) <= 2):
         errors['name'] = "Name must be longer than 2 characters"
-    elif(name.startswith('_')):
+    elif (name.startswith('_')):
         errors['name'] = "Name cannot begin with '_'"
 
 
